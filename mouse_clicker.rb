@@ -8,7 +8,7 @@ require 'rumouse'
 
 mouse = RuMouse.new
 
-limit = ARGV[0] || 30
+limit = (ARGV[0] || 30).to_i
 puts "Total click #{limit}"
 counter = 0
 loop do
